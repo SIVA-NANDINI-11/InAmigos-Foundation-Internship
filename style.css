@@ -45,7 +45,7 @@ nav ul li a{
     height:90vh;
     background:linear-gradient(rgba(0,0,0,.5),
     rgba(0,0,0,.5)),
-    url("images/volunteer.png");
+    url("volunteer.png");
     background-size:cover;
     background-position:center;
     display:flex;
