@@ -1,0 +1,182 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f8f9fa;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 10%;
+    background:#0a3d62;
+    color:white;
+}
+
+.logo img{
+    width:30px;
+    height:30px;
+    object-fit:contain;
+}
+.logo span{
+    font-size: 28px;
+    font-weight: bold;
+}
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,.5),
+    rgba(0,0,0,.5)),
+    url("images/volunteer.png");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:55px;
+}
+
+.hero p{
+    margin:15px 0;
+    font-size:22px;
+}
+
+.btn{
+    background:#27ae60;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+section{
+    padding:70px 10%;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#0a3d62;
+}
+
+.about p{
+    text-align:center;
+    line-height:1.8;
+}
+
+.project-container{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:20px;
+}
+
+@media(max-width:900px){
+    .project-container{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media(max-width:600px){
+    .project-container{
+        grid-template-columns:1fr;
+    }
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+.card h3{
+    padding:15px;
+}
+
+.card p{
+    padding:0 15px 20px;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.stat-box{
+    background:#0a3d62;
+    color:white;
+    padding:30px;
+    text-align:center;
+    border-radius:10px;
+}
+
+.stat-box h3{
+    font-size:35px;
+}
+
+.trust ul{
+    max-width:700px;
+    margin:auto;
+}
+
+.trust li{
+    margin:15px 0;
+    font-size:18px;
+}
+
+.join{
+    text-align:center;
+    background:#eafaf1;
+}
+
+.join button{
+    margin-top:20px;
+    padding:12px 25px;
+    background:#27ae60;
+    color:white;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+footer{
+    background:#0a3d62;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.social-links a{
+    color:white;
+    margin:0 10px;
+    text-decoration:none;
+}
